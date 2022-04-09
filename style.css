@@ -1,0 +1,139 @@
+body{
+  background-color: hsl(217, 54%, 11%);
+  text-align: center;
+}
+
+.container{
+  background-color: hsl(216, 50%, 16%);
+  width: 25%;
+  height: 60%;
+  border-radius: 5%;
+  text-align: center;
+  position: relative;
+  top:70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Image{
+  position: relative;
+  top:25px
+}
+.equimg{
+  width: 90%;
+  border-radius: 5%;
+}
+ .active{
+  background-color: hsl(178, 100%, 50%,50%);
+  width: 84%;
+  border-radius: 5%;
+  height: 300px;
+  text-align: center;
+  position: absolute;
+  top:28px;
+  left:30px;
+  display: none;
+
+}
+
+.view{
+  position: relative;
+  top:110px;
+}
+.Image:hover + .active{
+  display: block;
+  cursor: pointer;
+}
+.description{
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+h2{
+  color: white;
+  text-align: left;
+  padding: 50px 20px 5px;
+  font-family: "Outfit";
+  font-size: 1.5rem;
+}
+h2:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+p{
+  padding: 10px 20px 10px;
+  font-family: "Outfit";
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  text-align: left;
+  width: 100%;
+}
+
+.eth-title{
+  color: hsl(178, 100%, 50%);
+  font-family: "Outfit";
+  font-size: 18px;
+  text-align: left;
+}
+
+.days{
+  text-align:right;
+}
+.footer{
+  text-align: left;
+  padding-left: 20px
+}
+.footerimg{
+  width: 10%;
+  border:1px solid white;
+  border-radius: 100%;
+  position: relative;
+  bottom: 20px;
+}
+hr{
+  color: hsl(215, 51%, 70%);
+  position: relative;
+  bottom:20px;
+}
+.eth{
+  padding-top:0;
+  margin-top: 0;
+}
+.f1{
+  position: relative;
+  left:10px;
+  bottom: 20px;
+  color: hsl(215, 51%, 70%);
+}
+.f1,.f2{
+  font-family: "Outfit";
+  font-size: 16px;
+  padding: 0;
+}
+.f2{
+  color: white;
+}
+.f2:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.attribution{
+  position: relative;
+  color: white;
+  top:100px;
+}
+@media (max-width:375px){
+  .container{
+    margin: auto 30px auto 30px;
+    width: auto;
+    height: auto;
+  }
+  p{
+    font-size: 15px;
+  }
+  .eth-title{
+    font-size: 15px;
+  }
+
+  .active{
+    height: 260px;
+    left:25px;
+  }
+}
